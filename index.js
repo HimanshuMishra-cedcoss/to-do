@@ -10,7 +10,7 @@ $(document).ready(function(){
 	$("#add").on("click",function(){
 		$(".dataget").val(str);
 		 str=$("#task").val();
-		$(".data").append("<li contenteditable='true'>  "+str+" "+b2+"</li>");
+		$(".data").append("<li contenteditable='true' type='none'>  "+str+" "+b2+"</li>");
 			$(".del").on("click",function(){
     		$(this).parent().remove();
   			});
