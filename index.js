@@ -1,38 +1,27 @@
 // console.log("hello");
 var str;
-var j1=0;
+
  var c='<input type="checkbox" class="check1">'
 
  var b2='<button class="del">DEL</button>'
- 
+ // var b1='<button class="done">Done</button>'
 var editstr;
 $(document).ready(function(){
 	$("#add").on("click",function(){
-		 var b1=`<button id="edit${j1}" onclick="edit(this.id)">EDIT</button>`
-		 var i='<input type="text" name="" class="dataget">'
+		$(".dataget").val(str);
 		 str=$("#task").val();
-		// console.log(str)
-		$("ul").append("<li>"+c+" "+str+i+" "+b1+" "+b2+"</li>");
-			j1++;
-			console.log(j1,"hnjsifu")
-		    
-			
-		
-
+		$(".data").append("<li contenteditable='true'>  "+str+" "+b2+"</li>");
 			$(".del").on("click",function(){
-				console.log("cdsv");
     		$(this).parent().remove();
-    		
   			});
+  		$(document).on("dblclick","li",function(){
+  				console.log("cdbc")
+  				var x=$(this).remove();
+  				$(".donetask").append(x);
+  				$(".del").on("click",function(){
+    		$(this).parent().remove();
+  			});
+  			})
 		})
 	})
 		
-
-function edit(x){
-	console.log(x)
-	
-			console.log("button clicked")
-			$(".dataget").val(str);
-			console.log(str);
-			
-}
