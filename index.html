@@ -5,13 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container">
+	<div>
 		<div class="headrow">
 			<h1 >TO DO LIST</h1>
 		</div>
-		<div><h3>Single Click To Edit Double Click As Assign Done</h3></div>
-		<div >
-			<label>Add Tasks</label>
+		<div>
+		<div><h2>"Single Click To Edit Double Click Marked as Done Tasks"</h2></div>
+		<div class="todo">
+			<label style="font-size:18px;margin-right: 10px;">Add Tasks</label>
 			<input type="text" name="" id="task">
 			<button id="add">Add</button>
 			<h3>TO DO</h3>
@@ -19,10 +20,11 @@
 			<ul class="data"></ul>
 			</div>
 		</div>
-		<div>
-			<h3>Completed Tasks</h3>
-            <ul class="donetask"></ul>
+		<div class="finished">
+			<h2>Completed Tasks</h2>
+           <div><ul class="donetask"></ul></div> 
 		</div>
+	</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
 	<script type="text/javascript" src="index.js"></script>
