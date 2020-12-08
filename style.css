@@ -1,0 +1,9 @@
+h1{
+	text-align: center;
+}
+.headrow{
+	background-color: skyblue;
+}
+.task{
+	display: inline-block;
+}
