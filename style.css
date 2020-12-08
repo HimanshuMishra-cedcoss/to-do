@@ -1,9 +1,43 @@
+body{
+	background-color: lightyellow;
+}
 h1{
+	text-align: center;
+}
+h2{
+	text-align: center;	
+	color: red;
+}
+.todo{
+	text-align: center;
+}
+.finished{
 	text-align: center;
 }
 .headrow{
 	background-color: skyblue;
+	margin-top: 0px;
 }
 .task{
 	display: inline-block;
+}
+button{
+	font-size:16px;
+	border: none;
+	/*padding-right: 20px;
+	padding-left: 20px;*/
+	padding: 7px;
+	text-align: justify;
+	margin-top: 5px;
+	margin-left: 10px;
+	color: white;
+	background-color: green;
+	border-radius: 5px;
+}
+input{
+	font-size:18px;
+}
+li{
+	font-size: 19px;
+	border: none;
 }
